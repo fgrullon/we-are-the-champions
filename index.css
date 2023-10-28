@@ -44,8 +44,8 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 65%;
 }
-
 
 
 .endorsement{
@@ -53,10 +53,16 @@ h1, h2 {
     background: #FFFFFF;
     font-size: 12px;
     padding: 10px;
-    margin: auto;
-    border: 1px solid white;
+    margin: 10px auto;
 }
 
+.no_endorsement {
+    color: white;
+    background: #444059;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px gray;
+}
 
 .fromTo input {
     background: #444059;

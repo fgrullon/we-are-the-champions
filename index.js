@@ -28,18 +28,20 @@ onValue(endorsementsDB, function(snapshot){
     if (snapshot.exists()) {
         let endorsements = Object.entries(snapshot.val())
         
-    
-        // clearShoppingListEl()
+        clearEndorsementsListEl()
         
         for (let i = 0; i < endorsements.length; i++) {
             let endorsementId = endorsements[i][0]
             let endorsement = endorsements[i][1]
                     
             appendItemToEndorsementEl(endorsementId, endorsement)
-            // appendItemToShoppingListEl(currentItem)
         }    
     } else {
-        // shoppingListEl.innerHTML = "No items here... yet"
+        
+        let emptySpan = document.createElement("span")
+        emptySpan.className = "no_endorsement"
+        emptySpan.textContent = "No items here... yet"
+        endorsementList.appendChild(emptySpan) 
     }
 })
 
@@ -52,6 +54,10 @@ function formatEndorsement(){
         endorsement: endorsementInput.value,
         likes: 0
     }
+}
+
+function clearEndorsementsListEl(){
+    endorsementList.textContent = ""
 }
 
 function appendItemToEndorsementEl(endorsementId, endorsement){
