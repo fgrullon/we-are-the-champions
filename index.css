@@ -4,7 +4,7 @@ html, body {
     background: #1B1924;
     font-family: 'Josefin Sans', sans-serif;
     user-select: none;
-    margin: 40px;
+    margin: 40px 0;
 }
 
 .container {
@@ -53,7 +53,10 @@ h1, h2 {
     background: #FFFFFF;
     font-size: 12px;
     padding: 10px;
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 450px;
+    min-width: 400px;
 }
 
 .no_endorsement {
