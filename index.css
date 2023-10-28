@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1B1924;
+    font-family: 'Josefin Sans', sans-serif;
+    user-select: none;
+    margin: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+}
+
+h1, h2 {
+    color: white;
+}
+
+.endorsement-input {
+    background: #444059;
+    color: #8F8F8F;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    resize: none;
+}
+
+
+.endorsementList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.endorsement{
+    font-family: 'Inter', sans-serif;
+    background: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid white;
+}
+
+
+.fromTo input {
+    background: #444059;
+    color: #8F8F8F;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+}
+
+
+                
+.publish-btn {
+    background: #28A9F1;
+    color: #04131C;
+    font-family: inherit;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 22px;
+    margin: 15px;
+
+}
+
+article footer {
+    display: flex;
+    justify-content: space-between;
+}
